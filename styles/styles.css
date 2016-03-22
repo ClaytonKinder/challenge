@@ -28,6 +28,10 @@ main {
   background: blue;
   z-index: 2; }
 
+p {
+  font-weight: lighter;
+  font-size: 1.1rem; }
+
 h1 {
   font-size: 4.5rem; }
 
