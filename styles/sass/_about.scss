@@ -3,5 +3,41 @@
 ***/
 
 .about-wrapper {
+  padding: 150px 0;
+  background-color: white;
+  @include flexbox(row, center, center, wrap);
 
+  .about-block {
+    position: relative;
+    width: 50%;
+    max-width: 1000px;
+    border: 3px solid black;
+    padding: 75px 0;
+
+    .block-title {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      top: -32.5px;
+      left: 0;
+      right: 0;
+      background-color: white;
+    }
+
+    span {
+      display: block;
+    }
+
+    p:first-of-type {
+      padding: 0 75px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    p:last-of-type {
+      text-align: center;
+      padding: 0 125px;
+    }
+  }
 }
