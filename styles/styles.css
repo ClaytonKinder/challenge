@@ -2,6 +2,9 @@
   Importing all partials
 ***/
 /***
+  Mixins
+***/
+/***
   Global
 ***/
 *, *:before, *:after {
@@ -10,8 +13,11 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px; }
+
+img {
+  max-width: 100%; }
 
 main {
   position: absolute;
@@ -21,16 +27,51 @@ main {
   background: blue;
   z-index: 2; }
 
+h1 {
+  font-size: 4rem; }
+
 /***
   Header
 ***/
 header {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-color: black;
   color: white;
   position: fixed;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  header .header-block {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    header .header-block span {
+      display: block; }
+    header .header-block h1 {
+      letter-spacing: 0.55rem; }
+    header .header-block p {
+      letter-spacing: 0.075rem; }
+      header .header-block p span {
+        line-height: 2rem; }
+  header .scroll-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin-left: auto;
+    margin-right: auto; }
 
 /***
   About

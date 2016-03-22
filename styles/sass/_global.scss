@@ -9,8 +9,12 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+img {
+  max-width: 100%;
 }
 
 main {
@@ -20,4 +24,8 @@ main {
   width : 100vw;
   background: blue;
   z-index: 2;
+}
+
+h1 {
+  font-size: 4rem;
 }

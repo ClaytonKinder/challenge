@@ -3,10 +3,46 @@
 ***/
 
 header {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-color: black;
   color: white;
   position: fixed;
   z-index: 1;
+  text-align: center;
+  @include flexbox(row, center, center, wrap);
+
+  .header-block {
+    width: 50%;
+    height: 50%;
+    @include flexbox(column, center, center, wrap);
+
+    span {
+      display: block;
+    }
+
+    h1 {
+      letter-spacing: 0.55rem;
+    }
+
+    p {
+      letter-spacing: 0.075rem;
+
+      span {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .scroll-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
