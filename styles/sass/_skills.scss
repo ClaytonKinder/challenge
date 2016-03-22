@@ -12,7 +12,7 @@
     width: 50%;
     max-width: 1000px;
     border: 3px solid black;
-    padding: 75px 0 50px;
+    padding: 100px 0 50px;
 
     .block-title {
       width: 50%;
@@ -25,19 +25,16 @@
       background-color: white;
     }
 
-    span {
-      display: block;
-    }
+    .skill {
+      margin-bottom: 50px;
+      @include flexbox(column, center, center, wrap);
 
-    p:first-of-type {
-      padding: 0 75px;
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    p:last-of-type {
-      text-align: center;
-      padding: 0 125px;
+      p {
+        margin-top: 0;
+        margin-bottom: 35px;
+        padding: 0 75px;
+        text-align: center;
+      }
     }
   }
 }

@@ -1,0 +1,30 @@
+/***
+  Skills
+***/
+
+.gallery-wrapper {
+  background-color: white;
+  .gallery-row {
+    @include flexbox(row, space-between, center, wrap);
+
+    .gallery-image {
+      height: 300px;
+      @include flexbox(row, flex-start, flex-end, wrap);
+
+      &:first-of-type {
+        width: 24.75%;
+        background-color: pink;
+      }
+
+      &:nth-of-type(2) {
+        width: 48.75%;
+        background-color: tomato;
+      }
+
+      &:last-of-type {
+        width: 24.75%;
+        background-color: salmon;
+      }
+    }
+  }
+}
