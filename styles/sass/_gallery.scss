@@ -18,17 +18,17 @@
 
       &:first-of-type {
         width: 28.50%;
-        background-color: pink;
+        background-color: black;
       }
 
       &:nth-of-type(2) {
         width: 41.5%;
-        background-color: tomato;
+        background-color: black;
       }
 
       &:last-of-type {
         width: 28.5%;
-        background-color: salmon;
+        background-color: black;
       }
     }
   }

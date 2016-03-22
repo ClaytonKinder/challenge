@@ -210,13 +210,13 @@ header {
       flex-wrap: wrap; }
       .gallery-wrapper .gallery-row .gallery-image:first-of-type {
         width: 28.50%;
-        background-color: pink; }
+        background-color: black; }
       .gallery-wrapper .gallery-row .gallery-image:nth-of-type(2) {
         width: 41.5%;
-        background-color: tomato; }
+        background-color: black; }
       .gallery-wrapper .gallery-row .gallery-image:last-of-type {
         width: 28.5%;
-        background-color: salmon; }
+        background-color: black; }
 
 /***
   Contact
