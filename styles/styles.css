@@ -300,6 +300,8 @@ footer {
     display: inline; }
 
   .gallery-wrapper {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around; }
     .gallery-wrapper .gallery-image {
       width: 49%;
@@ -378,6 +380,10 @@ footer {
         left: 0px; }
 
   footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
     footer img {
       margin-right: 0;
