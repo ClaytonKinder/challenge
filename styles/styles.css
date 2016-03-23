@@ -43,7 +43,7 @@ h2 {
   margin: 0; }
 
 h3 {
-  width: 100%;
+  position: relative;
   font-size: 2.5rem;
   color: white;
   letter-spacing: 0.4rem;
@@ -195,6 +195,7 @@ header {
   align-items: center;
   flex-wrap: wrap; }
   .gallery-wrapper .gallery-image {
+    cursor: pointer;
     height: 250px;
     padding-left: 50px;
     background-color: black;
@@ -204,10 +205,27 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap; }
+    .gallery-wrapper .gallery-image:hover h3:before, .gallery-wrapper .gallery-image:hover h3:after {
+      width: calc(100% + 10px); }
     .gallery-wrapper .gallery-image:nth-child(-n+3) {
       margin-bottom: 17.5px; }
     .gallery-wrapper .gallery-image:nth-child(3n+2) {
       width: 41.5%; }
+    .gallery-wrapper .gallery-image h3:before, .gallery-wrapper .gallery-image h3:after {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 0;
+      position: absolute;
+      background-color: white;
+      transition: all 0.3s; }
+    .gallery-wrapper .gallery-image h3:before {
+      left: -10px;
+      bottom: -10px; }
+    .gallery-wrapper .gallery-image h3:after {
+      right: 0;
+      top: -10px;
+      transform: rotate(180deg); }
 
 /***
   Footer
@@ -293,11 +311,18 @@ footer {
   .block-title {
     width: 95%; }
 
-  h3 {
-    text-align: center; }
-
   .gallery-wrapper .gallery-image {
-    padding-left: 0; } }
+    padding-left: 0; }
+    .gallery-wrapper .gallery-image:hover h3:before, .gallery-wrapper .gallery-image:hover h3:after {
+      width: calc(100%); }
+    .gallery-wrapper .gallery-image h3 {
+      display: inline-block;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+      .gallery-wrapper .gallery-image h3:before {
+        left: 0px; } }
 @media screen and (max-width: 430px) {
   header .header-block p {
     display: none; }
