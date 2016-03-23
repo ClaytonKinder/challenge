@@ -2,11 +2,19 @@
   Importing all partials
 ***/
 /***
-  Mixins
-***/
-/***
   Global
 ***/
+/* Mixins */
+/* Animations */
+@keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 /* Setup */
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -178,15 +186,6 @@ header {
     header .scroll-icon .arrows path.a3 {
       animation-delay: 0s; }
 
-@keyframes arrow {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
 /***
   Services
 ***/
