@@ -3,26 +3,13 @@
 ***/
 
 .skills-wrapper {
-  padding: 150px 0;
-  background-color: white;
-  @include flexbox(row, center, center, wrap);
-
   .skills-block {
-    position: relative;
-    width: 50%;
-    max-width: 1000px;
-    border: 3px solid black;
-    padding: 100px 0 50px;
-
     .skill {
       margin-bottom: 50px;
       @include flexbox(column, center, center, wrap);
 
       p {
         margin-top: 0;
-        margin-bottom: 35px;
-        padding: 0 75px;
-        text-align: center;
       }
     }
   }

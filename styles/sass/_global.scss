@@ -22,7 +22,7 @@ img {
 
 main {
   position: absolute;
-  bottom: -100%;
+  top: 100%;
   height : 100vh;
   width : 100vw;
   z-index: 2;
@@ -47,6 +47,7 @@ h2 {
 }
 
 h3 {
+  width: 100%;
   font-size: 2.5rem;
   color: white;
   letter-spacing: 0.4rem;
@@ -59,7 +60,33 @@ h4 {
   margin: 24px 0 30px;
 }
 
-/* Blocks */
+/* Wrappers & Blocks */
+
+.wrapper {
+  padding: 150px 0;
+  background-color: white;
+  @include flexbox(row, center, center, wrap);
+}
+
+.block {
+  position: relative;
+  width: 50%;
+  max-width: 1000px;
+  border: 3px solid black;
+  padding: 75px 0 50px;
+  text-align: center;
+
+  p {
+    text-align: center;
+    &:first-of-type {
+      padding: 0 75px;
+      margin-bottom: 35px;
+    }
+    &:last-of-type {
+      padding: 0 125px;
+    }
+  }
+}
 
 .block-title {
   width: 50%;
@@ -70,4 +97,47 @@ h4 {
   left: 0;
   right: 0;
   background-color: white;
+}
+
+/* Various Elements */
+
+button {
+  position: relative;
+  width: 400px;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  border: 0;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 62px;
+    width: 62px;
+    background: white;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.2s;
+  }
+
+  &:before {
+    left: -20%;
+  }
+
+  &:after {
+    right: -20%;
+  }
+
+  &:hover:before {
+    left: -5%;
+  }
+
+  &:hover:after {
+    right: -5%;
+  }
 }

@@ -3,30 +3,14 @@
 ***/
 
 .services-wrapper {
-  padding: 150px 0;
   background-color: black;
   color: white;
-  @include flexbox(row, center, center, wrap);
 
   .services-block {
-    position: relative;
-    width: 50%;
-    max-width: 1000px;
-    border: 3px solid white;
-    padding: 75px 0 50px;
+    border-color: white;
 
     .block-title {
       background-color: black;
-    }
-
-    span {
-      display: block;
-    }
-
-    p {
-      padding: 0 75px;
-      text-align: center;
-      margin-bottom: 35px;
     }
   }
 }
