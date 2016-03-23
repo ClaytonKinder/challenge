@@ -23,7 +23,6 @@
   header {
     .header-block {
       width: 75%;
-      height: 75%;
     }
   }
 
@@ -42,7 +41,6 @@
 @media screen and (max-width: 1000px) {
   header {
     height: 500px;
-    background-position: 75% 50%;
     .header-block {
       height: 100%;
       width: 100%;
@@ -56,10 +54,6 @@
     .scroll-icon {
       display: none;
     }
-  }
-
-  .services-wrapper {
-    background-position: 75% 50%;
   }
 
   main {
@@ -159,6 +153,20 @@
           left: 0px;
         }
       }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+
+    img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 }
