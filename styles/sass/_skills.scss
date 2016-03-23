@@ -4,9 +4,15 @@
 
 .skills-wrapper {
   .skills-block {
+    padding-top: 100px;
     .skill {
       margin-bottom: 50px;
       @include flexbox(column, center, center, wrap);
+
+      img {
+        height: 96px;
+        width: 96px;
+      }
 
       p {
         margin-top: 0;

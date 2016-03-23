@@ -42,6 +42,7 @@
 @media screen and (max-width: 1000px) {
   header {
     height: 500px;
+    background-position: 75% 50%;
     .header-block {
       height: 100%;
       width: 100%;
@@ -55,6 +56,10 @@
     .scroll-icon {
       display: none;
     }
+  }
+
+  .services-wrapper {
+    background-position: 75% 50%;
   }
 
   main {
@@ -76,6 +81,16 @@
 }
 
 @media screen and (max-width: 825px) {
+  .services-wrapper {
+    .services-block {
+      .services-lines {
+        .services-line {
+          width: 12.5%;
+        }
+      }
+    }
+  }
+
   .block {
     width: 95%;
 
@@ -107,6 +122,16 @@
 }
 
 @media screen and (max-width: 480px) {
+  .services-wrapper {
+    .services-block {
+      .services-lines {
+        .services-line {
+          width: 2.5%;
+        }
+      }
+    }
+  }
+
   .block-title {
     width: 95%;
   }

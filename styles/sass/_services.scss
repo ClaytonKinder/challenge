@@ -3,14 +3,28 @@
 ***/
 
 .services-wrapper {
-  background-color: black;
+  background-image: url('../assets/images/services.png');
+  background-size: cover;
   color: white;
 
   .services-block {
+    border-top: 0;
     border-color: white;
 
+    .services-lines {
+      position: relative;
+      top: -75px;
+      @include flexbox(row, space-between, center, wrap);
+
+      .services-line {
+        height: 3px;
+        width: 25%;
+        background-color: white;
+      }
+    }
+
     .block-title {
-      background-color: black;
+      background-color: transparent;
     }
   }
 }
