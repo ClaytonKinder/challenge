@@ -5,14 +5,37 @@
 /* Mixins */
 
 @mixin flexbox($direction: row, $justify: flex-start, $align: flex-start, $wrap: wrap) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+  -webkit-box-pack: $justify;
+  -webkit-justify-content: $justify;
+      -ms-flex-pack: $justify;
+          justify-content: $justify;
+  -webkit-box-align: $align;
+  -webkit-align-items: $align;
+      -ms-flex-align: $align;
+          align-items: $align;
+  -webkit-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
 }
 
 /* Animations */
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
 
 @keyframes arrow
 {
@@ -132,6 +155,11 @@ button {
   letter-spacing: 0.2rem;
   overflow: hidden;
 
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
   &:before,
   &:after {
     content: '';
@@ -141,8 +169,11 @@ button {
     background: white;
     position: absolute;
     top: 0;
-    transform: rotate(45deg);
-    transition: all 0.2s;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.2s;
+            transition: all 0.2s;
   }
 
   &:before {
