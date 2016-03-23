@@ -9,7 +9,7 @@
   .gallery-image {
     cursor: pointer;
     height: 250px;
-    padding-left: 50px;
+    padding-left: 3%;
     background-size: cover;
     width: 28.5%;
     @include flexbox(row, flex-start, flex-end, wrap);
