@@ -285,7 +285,10 @@ footer {
     width: 75%; } }
 @media screen and (max-width: 550px) {
   button {
-    width: 95%; } }
+    width: 95%; }
+
+  header .scroll-icon {
+    display: none; } }
 @media screen and (max-width: 480px) {
   .block-title {
     width: 95%; }
@@ -295,5 +298,17 @@ footer {
 
   .gallery-wrapper .gallery-image {
     padding-left: 0; } }
+@media screen and (max-width: 430px) {
+  header .header-block p {
+    display: none; }
+
+  button:before {
+    left: -30%; }
+  button:after {
+    right: -30%; }
+  button:hover:before {
+    left: -10%; }
+  button:hover:after {
+    right: -10%; } }
 
 /*# sourceMappingURL=styles.css.map */

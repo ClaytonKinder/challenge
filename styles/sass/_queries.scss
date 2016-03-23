@@ -99,6 +99,11 @@
   button {
     width: 95%;
   }
+  header {
+    .scroll-icon {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -111,6 +116,34 @@
   .gallery-wrapper {
     .gallery-image {
       padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  header {
+    .header-block {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    &:before {
+      left: -30%;
+    }
+
+    &:after {
+      right: -30%;
+    }
+
+    &:hover:before {
+      left: -10%;
+    }
+
+    &:hover:after {
+      right: -10%;
     }
   }
 }
