@@ -487,6 +487,9 @@ footer {
   .services-wrapper .services-block .services-lines .services-line {
     width: 12.5%; }
 
+  .gallery-wrapper .gallery-image {
+    height: 250px; }
+
   .block {
     width: 95%; }
     .block p:first-of-type, .block p:last-of-type {
